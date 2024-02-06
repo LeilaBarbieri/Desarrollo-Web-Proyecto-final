@@ -1,0 +1,219 @@
+/*RESET*/
+
+
+/* CODIGOS GENERALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 400px;
+    background-image: url(https://img.freepik.com/foto-gratis/nube-blanca-cielo-azul_74190-2381.jpg?w=740&t=st=1706467458~exp=1706468058~hmac=8b0b0d1e253bf8670524d59a9d9dfba6685a7e1ddf13976cda5ecb567477ad9f);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+/* CODIGO DE INDEX*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header nav ul li {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    gap: 10px;
+
+}
+
+main h2 {
+    font-size: 45px;
+    color: black;
+    background-image: url(https://img.freepik.com/foto-gratis/nube-blanca-cielo-azul_74190-2381.jpg?w=740&t=st=1706467458~exp=1706468058~hmac=8b0b0d1e253bf8670524d59a9d9dfba6685a7e1ddf13976cda5ecb567477ad9f);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    background-color: #87CEEB;
+
+    margin-top: 30px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    margin: 50px;
+}
+
+;
+
+section div h3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section.texto {
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main.texto p {
+    display: block;
+}
+
+main.style h4 {
+    font-size: 30px;
+    text-align: left;
+    margin: 20px;
+}
+
+main.div button {
+    background-color: rgb(48, 13, 252);
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/*CODIGO DE INSTITUCIONAL*/
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.guardavidas {
+    text-align: left;
+    display: grid
+}
+
+section div.guardavidas h1 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+section.guardavidas span p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+
+
+section.guardavidas button {
+    background-color: rgb(240, 91, 91);
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+img {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+
+img .img-agua {
+    justify-self: end;
+}
+
+section.bomberos {
+    text-align: center;
+    display: grid;
+}
+
+section div.bomberos h2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+section div.imagen.bomberos {
+    float: right;
+}
+
+/*CODIGO DE COMUNIDAD*/
+
+header {
+    display: flex;
+    padding: 1 rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul {}
+
+.section div.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 2rem;
+    height: 70vh
+}
+
+section .img-bomberos-en-fuego {
+    display: grid;
+    justify-items: center;
+    grid-column: span 1;
+    gap: 20px;
+}
+
+@media screen {
+    min-width: 600px;
+
+}
+
+@media screen {
+    min-width: 1024px;
+
+}
+
+/*CODIGO DE NOSOTROS*/
+
+Section div h1 footer {
+    padding: 30px;
+    border-top: solid black;
+    text-align: center;
+    gap: 30px;
+}
