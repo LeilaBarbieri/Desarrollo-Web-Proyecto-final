@@ -50,6 +50,11 @@ header img {
 
 }
 
+.banner {
+    height: calc(100vh - 100px);
+    position: relative;
+}
+
 main h2 {
     font-size: 45px;
     color: black;
@@ -199,21 +204,59 @@ section .img-bomberos-en-fuego {
     gap: 20px;
 }
 
-@media screen {
-    min-width: 600px;
 
-}
-
-@media screen {
-    min-width: 1024px;
-
-}
 
 /*CODIGO DE NOSOTROS*/
 
+.bannernosotros{
+    height: calc(100vh - 100px);
+    position: relative;
+}
+
+.section div.grupo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 3rem 2rem;
+    height: 70vh
+}
+
+.grupo img {
+    max-width: 25%;
+    
+}
+
+.grupo p {
+    margin: 10px 0;
+}
+
+.contenedorstaff {
+    display: flex;
+    margin: 10vh;
+}
+
+.footer{
+    padding: 20px 0;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+}
 Section div h1 footer {
     padding: 30px;
-    border-top: solid black;
     text-align: center;
     gap: 30px;
 }
+/*RESPONSIVE */
+
+/*tablet*/
+
+@media (max-width: 1023px) {
+    .hearder {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {}
