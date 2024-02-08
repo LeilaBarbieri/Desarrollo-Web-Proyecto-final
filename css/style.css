@@ -187,17 +187,18 @@ header {
     align-items: center;
 }
 
-header nav ul {}
 
-.section div.contenedor {
+
+.section div.videohistorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 3rem 2rem;
-    height: 70vh
+    gap: 1rem;
+    margin: 1rem 1rem;
+    height: 30vh
+    max-width: 25%
 }
 
-section .img-bomberos-en-fuego {
+. section .img-bomberos-en-fuego {
     display: grid;
     justify-items: center;
     grid-column: span 1;
@@ -208,9 +209,12 @@ section .img-bomberos-en-fuego {
 
 /*CODIGO DE NOSOTROS*/
 
-.bannernosotros{
+.bannernosotros {
     height: calc(100vh - 100px);
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .section div.grupo {
@@ -223,7 +227,7 @@ section .img-bomberos-en-fuego {
 
 .grupo img {
     max-width: 25%;
-    
+
 }
 
 .grupo p {
@@ -235,20 +239,27 @@ section .img-bomberos-en-fuego {
     margin: 10vh;
 }
 
-.footer{
+.footer {
     padding: 20px 0;
     justify-content: center;
     margin: 20px;
     text-align: center;
 }
+
 Section div h1 footer {
     padding: 30px;
     text-align: center;
     gap: 30px;
 }
+
+
+/*CONTACTO*/
+
+
+
 /*RESPONSIVE */
 
-/*tablet*/
+/*tablet*/ /*mobile*/
 
 @media (max-width: 1023px) {
     .hearder {
