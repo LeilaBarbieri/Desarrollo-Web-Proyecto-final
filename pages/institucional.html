@@ -6,19 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GBA</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        h1 {
-            font-size: 40px;
-            color: black;
-            background-color: rgb(87, 195, 223);
-        }
-    </style>
-    <style>
-        h2 {
-            font-size: 40px;
-            background-color: rgb(87, 195, 223);
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -58,10 +46,19 @@
                     permanecer en la lista de servicio durante el tiempo que surja la necesidad.
                 </p>
             </span>
-            <button> Mas Informacion</button>
+            <button> Mas Informacion
+                <style>
+                    button{
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        margin: 10px;
+                    }
+                </style>
+            </button>
         </div>
         <div class="imagen guardavidas">
-            <img src="../img/carrera de guardavidas.jpg" alt="agua" style="width: 550px; height: 500px;">
+            <img src="../img/carrera de guardavidas.jpg" alt="agua" style="width: 500px; height: 500px;">
 
         </div>
 
@@ -87,7 +84,7 @@
             <button>Mas Informacion</button>
         </div>
         <div class="imagen bombero">
-            <img src="../img/bomberos.jpg" alt="" width="500px; height 340px">
+            <img src="../img/bomberos.jpg" alt="" width="500px; height 500px">
         </div>
     </section>
 
@@ -121,11 +118,13 @@
             h4 {
                 font-size: 30px;
                 color: black;
-                background-color: rgb(12, 234, 241);
+                background-color: rgb(87, 195, 223);
                 text-align: center;
-                margin: 20px;
+                margin-top: 10px;
             }
         </style>
+       </section>
+        <section class="requisitos">
         <div>
             <img src="../img/18+.png" alt="mayor de 18" style="display: inline-block;width: 50px; height: 50px; ">
             <h5>Mayor de 18 años</h5>
@@ -145,7 +144,6 @@
             <img src="../img/examen.png" alt="nivelacion" style="display: inline-block;width: 50px; height: 50px; ">
             <h5>Prueba de nivelacion</h5>
         </div>
-
         <style>
             h5 {
                 font-size: 20px;
@@ -154,10 +152,16 @@
                 align-items: center;
             }
         </style>
-
     </section>
+        
 
-    <footer> Todos los derechos reservados | 2023</footer>
+
+
+    <footer class="terminos">
+        <div class="col-12 d-flex justify-content-between justify-content-md-center py-4">
+            Todos los derechos reservados | 2023
+        </div>
+    </footer>
 
 </body>
 
