@@ -4,47 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GBA</title>
-    <link rel="shortcut icon" href="img/Logotipo marca de productos sustentables ilustrado verde.png"
-        type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header class="container-nav">
+        <div class="col-4">
+            <img src="../img/logotipo.png" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg  col-8 height 10px">
+            <div class="container-fluid">
 
-        <img src="../img/logotipo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./comunidad.html">Comunidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/institucional.html">Institucional</a></li>
-                <li><a href="../pages/comunidad.html">Comunidad</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contactos</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
 
-    <div class="banner-nosotros">
-        <img src="../img/nosotros.png" alt="">
-    </div>
+    <section class="nosotros1">
+        <div class="nosotros2">
+            <img src="../img/nosotros.png" alt="" height="400px">
+        </div>
+    </section>
 
-    <section>
-        <div class="Quienes somos">
-            <h1>Quienes somos?</h1>
-            <style>
-                h1 {
-                    font-size: 50px;
-                    color: black;
-                    background-color: rgb(87, 195, 223);
-                    text-align: center;
-                    margin: 20px;
+    <section class="quienes">
+        <div class="quienes-somos">
+            <h1>¿Quienes somos?</h1>
 
-                }
-            </style>
             <p>GBA Guardavidas Bomberos Argentinos en Brasil, nace en 2023 con la idea de ofrecerte las herramientas
                 necesarias para formarte en dos carreras a modo profesional, y ademas queremos que disfrutes del
                 proceso,
@@ -55,6 +69,7 @@
                 ayudarte con los papeles necesarios para tu estadia en Brasil. </p>
         </div>
     </section>
+
 
     <section id="staff class.staff">
         <h2 class="text-dark-violet text-center heading-4 text-bold">STAFF
@@ -80,7 +95,7 @@
 
     <section class="grupo">
         <div class="staff">
-            <img src="../img/staff juli.jpg" alt="" style="width: 100%; height: 250px;">
+            <img src="../img/staff juli.jpg" alt="" style="width:200px; height: 200px;">
             <div>
                 <p>Julieta Corea</p>
             </div>
@@ -93,7 +108,7 @@
 
 
         <div class="staff">
-            <img src="../img/staff dani.jpg" alt="" style="width: 100%; height: 250px;">
+            <img src="../img/staff dani.jpg" alt="" style="width:200px; height: 200px;">
             <div>
                 <p>Daniel Robles</p>
             </div>
@@ -106,7 +121,7 @@
 
 
         <div class="staff">
-            <img src="../img/staff belen.jpg" alt="" style="width:100%;height: 250px">
+            <img src="../img/staff belen.jpg" alt="" style="width:200px; height: 200px">
             <div>
                 <p>Belen Barbieri</p>
             </div>
@@ -119,7 +134,7 @@
 
 
         <div class="staff">
-            <img src="../img/staff cordoba.jpg" alt="" style="width:100%;height: 250px">
+            <img src="../img/staff cordoba.jpg" alt="" style="width:200px; height: 200px">
             <div>
                 <p>Martin Cordoba</p>
             </div>
@@ -133,50 +148,38 @@
         </div>
     </section>
 
-    <section>
-        <h3>OFRECEMOS</h3>
-        <fieldset>
 
-            <div>Atención personalizada</div>
-            <div>Facilitamos tramites para realizar Resicendia</div>
-            <div>Información precisa y necesaria</div>
+    <section class="ofrecemos">
+        <div class="caja">
+            <h3> OFRECEMOS</h3>
+            <form action="caja2">
+                <div>Atención personalizada</div>
+                <div>Facilitamos tramites para realizar Resicendia</div>
+                <div>Información precisa y necesaria</div>
+            </form>
 
-            <button>Mas informacion
-                <a href="../pages/contacto.html"></a>
-            </button>
-            <style>
-                div {
-                    font-size: 30;
-                    position: relative;
-                    text-align: left;
-                }
-            </style>
-
-            <style>
-                fieldset {
-                    border-color: aqua;
-                    font-family: Arial, Helvetica, sans-serif;
-
-                }
-            </style>
-
-            <style>
-                button {
-                    display: flex;
-
-                }
-            </style>
-        </fieldset>
-
+        </div>
+            
+        <div class="boton-final">
+            <div class="boton btn btn-ligh">
+                MÁS INFORMACIÓN
+            </div>
+        </div>
     </section>
-
-
-
+    
+    
     <footer class="terminos">
         <div class="col-12 d-flex justify-content-between justify-content-md-center py-4">
-            Todos los derechos reservados | 2023
+            Todos los derechos reservados | 2024
         </div>
     </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

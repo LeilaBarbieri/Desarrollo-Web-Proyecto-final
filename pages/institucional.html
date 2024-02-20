@@ -4,70 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GBA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css">
-   
+    <title>Document</title>
+
+
 </head>
 
 <body>
-    <header>
-        <img src="../img/logotipo.png" alt="">
+    <header class="container-nav">
+        <div class="col-4">
+            <img src="../img/logotipo.png" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg  col-8 height 10px">
+            <div class="container-fluid">
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/institucional.html">Institucional</a></li>
-                <li><a href="../pages/comunidad.html">Comunidad</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contactos</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./comunidad.html">Comunidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./institucional.html">Institucional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
         </nav>
     </header>
 
     <section>
-        <div class="guardavidas">
-            <h1 style="display: inline-block;">Carrera de Guardavidas Civil</h1>
-            <span>
-                <p>El Cuerpo de Bomberos Civil de Balneario Camboriu promueve un curso de formacion de Guardavidas
-                    Civil,
-                    para atender la demanda de temporada de verano, asi mismo con la posibilidad de trabajar todo el año
-                    en
-                    la playa. Para comenzar el curso, los candidatos tenían que nadar 500 metros en menos de 11 minutos,
-                    correr una distancia de 1600 metros en menos de siete minutos, ser considerados aptos en un examen
-                    de
-                    salud física, tener un certificado negativo de antecedentes penales y tener un resultado negativo en
-                    una
-                    prueba toxicológica. Para superar el curso, convirtiéndose en socorrista civil, el alumno debe
-                    realizar
-                    todas las pruebas físicas e intelectuales aplicadas durante el curso, que está abierto a hombres y
-                    mujeres.
-                    Los estudiantes que se consideren aptos para el curso pueden ser contratados inmediatamente y
-                    también durante la Operación Verano. Dependiendo de su rendimiento, durante la temporada, pueden
-                    permanecer en la lista de servicio durante el tiempo que surja la necesidad.
-                </p>
-            </span>
-            <button> Mas Informacion
-                <style>
-                    button{
-                        justify-content: center;
-                        display: flex;
-                        align-items: center;
-                        margin: 10px;
-                    }
-                </style>
-            </button>
+        <div class="row">
+            <div class="guardavidas col-6">
+                <h1 style="display: inline-block;">Carrera de Guardavidas Civil</h1>
+                <span>
+                    <p>El Cuerpo de Bomberos Civil de Balneario Camboriu promueve un curso de formacion de Guardavidas
+                        Civil,
+                        para atender la demanda de temporada de verano, asi mismo con la posibilidad de trabajar todo el
+                        año
+                        en
+                        la playa. Para comenzar el curso, los candidatos tenían que nadar 500 metros en menos de 11
+                        minutos,
+                        correr una distancia de 1600 metros en menos de siete minutos, ser considerados aptos en un
+                        examen
+                        de
+                        salud física, tener un certificado negativo de antecedentes penales y tener un resultado
+                        negativo en
+                        una
+                        prueba toxicológica. Para superar el curso, convirtiéndose en socorrista civil, el alumno debe
+                        realizar
+                        todas las pruebas físicas e intelectuales aplicadas durante el curso, que está abierto a hombres
+                        y
+                        mujeres.
+                        Los estudiantes que se consideren aptos para el curso pueden ser contratados inmediatamente y
+                        también durante la Operación Verano. Dependiendo de su rendimiento, durante la temporada, pueden
+                        permanecer en la lista de servicio durante el tiempo que surja la necesidad.
+                    </p>
+                </span>
+            </div>
         </div>
-        <div class="imagen guardavidas">
+
+        <div class="imagen guardavidas col-4">
             <img src="../img/carrera de guardavidas.jpg" alt="agua" style="width: 500px; height: 500px;">
 
         </div>
-
+        <button class="btn btn-ligh"> Mas Información
+            <style>
+                button {
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin: 20px;
+                    background-image: linear-gradient(rgb(75, 176, 201), rgb(198, 238, 238));
+                }
+            </style>
+        </button>
     </section>
 
     <section>
         <div class="bomberos">
 
-            <h2 style="display: block;">Carrera de Bombero Civil</h2>
+            <h2 style="display:inline-block;">Carrera de Bombero Civil</h2>
+            <style>
+                h2 {
+                    font-size: 20px;
+                    color: black;
+                    text-align: center;
+                    margin: 20px;
+
+                }
+            </style>
+
+            <div class="imagen bombero">
+                <img src="../img/bomberos.jpg" alt="" width="500px; height 500px">
+            </div>
             <p>
                 El programa de Bomberos Comunitarios tiene como objetivo capacitar a personas de la comunidad para que
                 actúen como agentes de prevención de accidentes y referentes locales ante la necesidad de coordinación
@@ -81,11 +130,22 @@
                 18 años, presentar certificado negativo de antecedentes penales, presentar certificado de salud mental y
                 capacidad física y presentar prueba toxicológica.
             </p>
-            <button>Mas Informacion</button>
+
+            <button class="btn btn-ligh"> Mas Información
+                <style>
+                    button {
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        margin: 20px;
+                        background-image: linear-gradient(rgb(75, 176, 201), rgb(198, 238, 238));
+                    }
+                </style>
+            </button>
+
         </div>
-        <div class="imagen bombero">
-            <img src="../img/bomberos.jpg" alt="" width="500px; height 500px">
-        </div>
+
     </section>
 
     <section>
@@ -95,7 +155,6 @@
                 font-size: 30px;
                 text-align: center;
                 margin: 20px;
-                background-color: rgb(87, 195, 223);
 
             }
         </style>
@@ -118,50 +177,47 @@
             h4 {
                 font-size: 30px;
                 color: black;
-                background-color: rgb(87, 195, 223);
+                background-image: linear-gradient(rgb(75, 176, 201), rgb(198, 238, 238));
                 text-align: center;
                 margin-top: 10px;
             }
         </style>
-       </section>
-        <section class="requisitos">
-        <div>
-            <img src="../img/18+.png" alt="mayor de 18" style="display: inline-block;width: 50px; height: 50px; ">
-            <h5>Mayor de 18 años</h5>
-        </div>
-
-        <div>
-            <img src="../img/graduado.png" alt="secundario terminado"
-                style="display: inline-block;width: 50px; height: 50px; ">
-            <h5>Secundario Completo</h5>
-        </div>
-        <div>
-            <img src="../img/natacion.png" alt="tecnica basica de natacion"
-                style="display: inline-block;width: 50px; height: 50px; ">
-            <h5>Habilidades basicas de natacion</h5>
-        </div>
-        <div>
-            <img src="../img/examen.png" alt="nivelacion" style="display: inline-block;width: 50px; height: 50px; ">
-            <h5>Prueba de nivelacion</h5>
-        </div>
-        <style>
-            h5 {
-                font-size: 20px;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
     </section>
-        
+    <section class="requisitos">
+        <div class="requisitos2">
+            <div>
+                <img src="../img/18+.png" alt="mayor de 18" style="display: inline-block;width: 50px; height: 50px; ">
+                <h5>Mayor de 18 años</h5>
+            </div>
+
+            <div>
+                <img src="../img/graduado.png" alt="secundario terminado"
+                    style="display: inline-block;width: 50px; height: 50px; ">
+                <h5>Secundario Completo</h5>
+            </div>
+            <div>
+                <img src="../img/natacion.png" alt="tecnica basica de natacion"
+                    style="display: inline-block;width: 50px; height: 50px; ">
+                <h5>Habilidades basicas de natación</h5>
+            </div>
+            <div>
+                <img src="../img/examen.png" alt="nivelacion" style="display: inline-block;width: 50px; height: 50px; ">
+                <h5>Prueba de nivelación</h5>
+            </div>
+        </div>
+    </section>
 
 
 
     <footer class="terminos">
         <div class="col-12 d-flex justify-content-between justify-content-md-center py-4">
-            Todos los derechos reservados | 2023
+            Todos los derechos reservados | 2024
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
